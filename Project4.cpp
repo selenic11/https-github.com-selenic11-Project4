@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class Vector {
@@ -22,6 +23,12 @@ public:
     void Print() {
         cout << x << " " << y << " " << z;
     }
+
+public:
+    double sizeV() {
+        vector <double> v = { x, y, z };
+        return v.size();
+    }
 };
 
 int main()
@@ -30,6 +37,8 @@ int main()
     vect.Print();
     cout << "\n";
     vect2.Print();
+    cout << "\n";
+    cout << vect2.sizeV();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
