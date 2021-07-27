@@ -26,14 +26,14 @@ public:
 
 public:
     double sizeV() {
-        vector <double> v = { x, y, z };
-        return v.size();
+        double dl = sqrt(x * x + y * y + z * z);
+        return dl;
     }
 };
 
 int main()
 {
-    Vector vect, vect2(3, 3, 3);
+    Vector vect, vect2(4, 2, 4);
     vect.Print();
     cout << "\n";
     vect2.Print();
